@@ -6,7 +6,7 @@ It displays my personal info, hobbies, dislikes, and live local time — all in 
 ---
 
 ## 🚀 Live Demo
-👉 [View Live on Vercel](https://frontend-wizards-profile-hng-stage.vercel.app/)
+👉 [View Live on Vercel](https://frontend-wizards-profile-hng-stage-dusky.vercel.app/)
 
 ---
 
