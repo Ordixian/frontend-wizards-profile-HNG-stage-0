@@ -1,12 +1,21 @@
-// Dynamic current time
+// Get the time span element
 const timeEl = document.getElementById("current-time");
-function updateTime() {
-  timeEl.textContent = Date.now();
-}
-updateTime();
-setInterval(updateTime, 1000);
 
-// Avatar upload
+// Function to update the time in HH:MM format
+function updateTime() {
+  const now = new Date();
+  const hours = String(now.getHours()).padStart(2, "0");
+  const minutes = String(now.getMinutes()).padStart(2, "0");
+  timeEl.textContent = `${hours}:${minutes}`;
+}
+
+// Initial display
+updateTime();
+
+// Update every minute
+setInterval(updateTime, 60000);
+
+// Avatar upload functionality
 const avatarInput = document.getElementById("avatar-upload");
 const avatarImg = document.getElementById("avatar-img");
 
