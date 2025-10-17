@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card | Frost</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <article data-testid="test-profile-card" class="profile-card">
+    <header>
+      <h2 data-testid="test-user-name">Alan "Frost" Tempest</h2>
+    </header>
+
+    <figure>
+      <img 
+        data-testid="test-user-avatar" 
+        src="https://i.imgur.com/4ZQZ4ZB.png" 
+        alt="Profile photo of Frost"
+      />
+      <figcaption>Frontend Wizard in training ⚡</figcaption>
+    </figure>
+
+    <p data-testid="test-user-bio">
+      Cybersecurity & DevOps hybrid on a mission to conquer Redora. 
+      Coffee-powered, code-obsessed, and slightly unhinged.
+    </p>
+
+    <p>
+      Current time (ms): 
+      <span data-testid="test-user-time" id="current-time"></span>
+    </p>
+
+    <nav data-testid="test-user-social-links">
+      <ul>
+        <li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a></li>
+        <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a></li>
+        <li><a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <h3>Hobbies</h3>
+      <ul data-testid="test-user-hobbies">
+        <li>Writing fantasy novels</li>
+        <li>Hacking labs</li>
+        <li>Gaming & anime</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Dislikes</h3>
+      <ul data-testid="test-user-dislikes">
+        <li>Laggy WiFi</li>
+        <li>Lazy code reviews</li>
+        <li>People who say “it works on my machine”</li>
+      </ul>
+    </section>
+  </article>
+
+  <script src="script.js"></script>
+</body>
+</html>
