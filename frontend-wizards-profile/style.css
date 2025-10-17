@@ -5,7 +5,6 @@ body {
   padding: 2rem;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
 }
 
 .profile-card {
@@ -43,22 +42,6 @@ body {
   gap: 1rem;
 }
 
-/* Desktop layout */
-@media (min-width: 768px) {
-  .card-main {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  .avatar-container {
-    flex: 1;
-  }
-
-  .profile-content {
-    flex: 2;
-  }
-}
-
 nav ul, section ul {
   list-style: none;
   padding: 0;
@@ -78,4 +61,20 @@ a:focus, a:hover {
   text-decoration: underline;
   outline: 2px solid #007bff;
   outline-offset: 2px;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  .card-main {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .avatar-container {
+    flex: 1;
+  }
+
+  .profile-content {
+    flex: 2;
+  }
 }
