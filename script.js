@@ -1,12 +1,13 @@
-// Live time in HH:MM format
-const timeEl = document.getElementById("current-time");
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector("form");
 
-function updateTime() {
-  const now = new Date();
-  const hours = String(now.getHours()).padStart(2, "0");
-  const minutes = String(now.getMinutes()).padStart(2, "0");
-  timeEl.textContent = `${hours}:${minutes}`;
-}
+  if (form) {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
 
-updateTime();
-setInterval(updateTime, 60000);
+      // Fake form submission effect
+      alert("Message sent successfully (fake, for demo)!");
+      form.reset();
+    });
+  }
+});
