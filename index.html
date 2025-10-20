@@ -5,71 +5,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Profile Card | Ojomu Gbolahan</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Navbar styling */
+    nav.navbar {
+      background: #161b22;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      border-bottom: 1px solid #30363d;
+    }
+    nav.navbar a {
+      color: #58a6ff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav.navbar a:hover {
+      color: #1f6feb;
+    }
+  </style>
 </head>
 <body>
 
-<article data-testid="test-profile-card" class="profile-card">
-  <div class="card-main">
-    <!-- Avatar -->
-    <figure class="avatar-container">
-      <img 
-        data-testid="test-user-avatar" 
-        src="https://i.postimg.cc/6qBdG9G6/Whats-App-Image-2025-10-17-at-4-12-47-PM.jpg" 
-        alt="Profile photo of Ojomu Gbolahan"
-        id="avatar-img"
-      />
-    </figure>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-    <!-- Text content -->
-    <div class="profile-content">
-      <header>
-        <h2 data-testid="test-user-name">Ojomu Gbolahan</h2>
-      </header>
+  <article data-testid="test-profile-card" class="profile-card">
+    <div class="card-main">
+      <!-- Avatar -->
+      <figure class="avatar-container">
+        <img 
+          data-testid="test-user-avatar" 
+          src="https://i.postimg.cc/6qBdG9G6/Whats-App-Image-2025-10-17-at-4-12-47-PM.jpg" 
+          alt="Profile photo of Ojomu Gbolahan"
+          id="avatar-img"
+        />
+      </figure>
 
-      <p data-testid="test-user-bio">
-        A hybrid of both Cybersecurity and DevOps, a student of University of Lagos.
-      </p>
+      <!-- Text content -->
+      <div class="profile-content">
+        <header>
+          <h2 data-testid="test-user-name">Ojomu Gbolahan</h2>
+        </header>
 
-      <p>
-        Current time: <span data-testid="test-user-time" id="current-time"></span>
-      </p>
+        <p data-testid="test-user-bio">
+          A hybrid of both Cybersecurity and DevOps, a student of University of Lagos.
+        </p>
 
-      <nav data-testid="test-user-social-links">
-        <ul>
-          <li>
-            <a href="https://github.com/Ordixian/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">
-              GitHub
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/gbolahan-ojomu-2779a4379/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">
-              LinkedIn
-            </a>
-          </li>
-        </ul>
-      </nav>
+        <p>
+          Current time: <span data-testid="test-user-time" id="current-time"></span>
+        </p>
 
-      <section>
-        <h3>Hobbies</h3>
-        <ul data-testid="test-user-hobbies">
-          <li>Reading novels</li>
-          <li>Watching anime</li>
-          <li>Cooking</li>
-          <li>Coding</li>
-        </ul>
-      </section>
+        <nav data-testid="test-user-social-links">
+          <ul>
+            <li>
+              <a href="https://github.com/Ordixian/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/gbolahan-ojomu-2779a4379/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </nav>
 
-      <section>
-        <h3>Dislikes</h3>
-        <ul data-testid="test-user-dislikes">
-          <li>Banana</li>
-          <li>Blue</li>
-        </ul>
-      </section>
+        <section>
+          <h3>Hobbies</h3>
+          <ul data-testid="test-user-hobbies">
+            <li>Reading novels</li>
+            <li>Watching anime</li>
+            <li>Cooking</li>
+            <li>Coding</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Dislikes</h3>
+          <ul data-testid="test-user-dislikes">
+            <li>Banana</li>
+            <li>Blue</li>
+          </ul>
+        </section>
+      </div>
     </div>
-  </div>
-</article>
+  </article>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
