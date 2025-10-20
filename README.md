@@ -1,7 +1,7 @@
-# 🧙‍♂️ Frontend Wizards Profile – HNG Stage Task
+# 🧙‍♂️ Frontend Wizards Profile – HNG Stage 1 Task
 
-This is my profile card project built for the **HNG Internship (Frontend Track)**.  
-It displays my personal info, hobbies, dislikes, and live local time — all in a clean, responsive design.
+This project is part of the **HNG Internship (Frontend Track)**.  
+It builds upon the Stage 0 task by expanding the single-page profile card into a **multi-page responsive website** with semantic HTML, accessibility, and JavaScript interactivity.
 
 ---
 
@@ -11,11 +11,12 @@ It displays my personal info, hobbies, dislikes, and live local time — all in 
 ---
 
 ## 💡 Features
-- Permanent profile image  
-- Live current time display (updates automatically)  
-- Organized layout with responsive styling  
-- Test IDs for HNG task validation  
-- Links to GitHub and LinkedIn  
+- 🧍 **Profile Card (Home Page):** Displays name, bio, hobbies, dislikes, and live local time.  
+- 📖 **About Page:** Reflective sections about personal goals, growth areas, and thoughts.  
+- ✉️ **Contact Page:** Includes a functional form with validation and success message.  
+- 🧭 **Navigation Bar:** Seamless page switching between Home, About, and Contact.  
+- 🪶 **Accessibility:** Uses semantic HTML, labels, ARIA, and keyboard-friendly structure.  
+- 📱 **Fully Responsive:** Looks clean across mobile, tablet, and desktop.  
 
 ---
 
@@ -23,14 +24,15 @@ It displays my personal info, hobbies, dislikes, and live local time — all in 
 - **HTML5**
 - **CSS3**
 - **JavaScript (ES6)**
-- **Deployed with Vercel**
+- **Deployed via Vercel**
 
 ---
 
 ## 🧍 Profile Details
 | Field | Information |
 |-------|--------------|
-| **Name** | Ojomu Gbolahan |
+| **Name** | Ojomu Gbolahan Fadilulahi |
+| **Alias** | Ordixian |
 | **Bio** | A hybrid of both Cybersecurity and DevOps, a student of University of Lagos |
 | **Hobbies** | Reading novels, Watching anime, Cooking, Coding |
 | **Dislikes** | Banana, Blue |
@@ -39,18 +41,32 @@ It displays my personal info, hobbies, dislikes, and live local time — all in 
 
 ---
 
-## 🧩 Folder Structure
-.
-├── index.html
-├── style.css
-├── script.js
-└── README.md
+## 🧭 Pages Overview
 
+### 🏠 **Home (index.html)**
+Displays profile picture, name, hobbies, dislikes, and real-time clock.
+
+### 👤 **About (about.html)**
+Reflective sections:
+- Bio (`test-about-bio`)
+- Goals (`test-about-goals`)
+- Areas of Low Confidence (`test-about-confidence`)
+- Note to Future Self (`test-about-future-note`)
+- Extra Thoughts (`test-about-extra`)
+
+### ✉️ **Contact (contact.html)**
+Form includes:
+- Full Name (`test-contact-name`)
+- Email (`test-contact-email`)
+- Subject (`test-contact-subject`)
+- Message (`test-contact-message`)
+- Success Message (`test-contact-success`)
+
+**Validation Rules:**
+- All fields are required.  
+- Email must be valid.  
+- Message must be at least 10 characters.  
 
 ---
 
-## ⚙️ How to Run Locally
-1. Clone this repo:
-   ```bash
-   git clone https://github.com/Ordixian/frontend-wizards-profile-HNG-stage-0
-
+## 🧩 Folder Structure
